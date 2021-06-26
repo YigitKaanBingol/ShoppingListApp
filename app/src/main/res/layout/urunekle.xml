@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".UrunEkle">
+
+    <TextView
+        android:id="@+id/ListeAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/UrunAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:ems="10"
+            android:hint="Ürün Adı"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/UrunAdedi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:ems="10"
+            android:hint="Adeti"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/UrunFiyati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:ems="10"
+            android:hint="Fiyatı"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="300dp"
+        android:background="#FF9800"
+        android:text="Ekle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ListView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0"
+            android:background="#FF9800"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0"
+            android:background="#FF9800"
+            app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0"
+            android:background="#FF9800"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0"
+            android:background="#FF9800"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0"
+            android:background="#FF9800"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+    </LinearLayout>
+
+</LinearLayout>
